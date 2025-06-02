@@ -25,7 +25,7 @@
     </div>
 
     <div
-      class="mainFoot pt-9 h-[100vh] mt-2 flex justify-between p-4 md:flex-row flex-col bg-gray-200"
+      class="mainFoot pt-9 h-[100vh]  flex justify-between p-4 md:flex-row flex-col bg-gray-200"
     >
       <div class="address">
         <h1 class="font-bold">OFFICE & FACTORY:</h1>
