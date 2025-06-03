@@ -14,6 +14,7 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 interface _GlobalComponents {
       'MenuBar': typeof import("../components/MenuBar.vue")['default']
     'Card': typeof import("../components/card.vue")['default']
+    'Chat': typeof import("../components/chat.vue")['default']
     'Navbar': typeof import("../components/navbar.vue")['default']
     'ProductPage': typeof import("../components/productPage.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
@@ -100,6 +101,7 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyMenuBar': LazyComponent<typeof import("../components/MenuBar.vue")['default']>
     'LazyCard': LazyComponent<typeof import("../components/card.vue")['default']>
+    'LazyChat': LazyComponent<typeof import("../components/chat.vue")['default']>
     'LazyNavbar': LazyComponent<typeof import("../components/navbar.vue")['default']>
     'LazyProductPage': LazyComponent<typeof import("../components/productPage.vue")['default']>
     'LazyUAccordion': LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
@@ -192,6 +194,7 @@ declare module 'vue' {
 
 export const MenuBar: typeof import("../components/MenuBar.vue")['default']
 export const Card: typeof import("../components/card.vue")['default']
+export const Chat: typeof import("../components/chat.vue")['default']
 export const Navbar: typeof import("../components/navbar.vue")['default']
 export const ProductPage: typeof import("../components/productPage.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']
@@ -278,6 +281,7 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyMenuBar: LazyComponent<typeof import("../components/MenuBar.vue")['default']>
 export const LazyCard: LazyComponent<typeof import("../components/card.vue")['default']>
+export const LazyChat: LazyComponent<typeof import("../components/chat.vue")['default']>
 export const LazyNavbar: LazyComponent<typeof import("../components/navbar.vue")['default']>
 export const LazyProductPage: LazyComponent<typeof import("../components/productPage.vue")['default']>
 export const LazyUAccordion: LazyComponent<typeof import("../node_modules/@nuxt/ui/dist/runtime/components/Accordion.vue")['default']>
