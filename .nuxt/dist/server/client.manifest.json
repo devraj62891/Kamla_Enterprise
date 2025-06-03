@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "D:/Kamla/node_modules/nuxt/dist/app/entry.js": {
+  "/home/weloin/Projects/Kamla_Enterprise/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "D:/Kamla/node_modules/nuxt/dist/app/entry.js"
+    "file": "/home/weloin/Projects/Kamla_Enterprise/node_modules/nuxt/dist/app/entry.js"
   }
 }

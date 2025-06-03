@@ -6,7 +6,7 @@
     </div>
 
   
-    <div class="text-center md:text-left md:flex-1">
+    <div class="text-center md:text-center md:flex-1">
       <p class="text-lg md:text-2xl font-bold">
         Deals in: Transformer Core, E/L, Steel Core, CT Core
       </p>
