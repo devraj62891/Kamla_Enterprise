@@ -8,8 +8,8 @@
       <p class="font-bold">GSTIN: 19FSTPS8086Q1ZY</p>
 
       <div class="text-sm text-center md:text-right">
-        <a href="mailto:abhimanyushaw@gmail.com">
-          <span class="hover:text-red-600">abhimanyushaw@gmail.com</span>
+        <a href="mailto:kamalaenterprise237@gmail.com">
+          <span class="hover:text-red-600">kamalaenterprise237@gmail.com</span>
         </a>
         <div>
           <a href="tel:+916289155528">9339951759</a> ||
