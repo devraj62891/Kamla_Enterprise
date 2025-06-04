@@ -2,7 +2,7 @@
     <div>
         <div v-if="showChat" @click="showChat = false" class="fixed left-0 right-0 bottom-0 top-0 bg-transparent"></div>
         <!-- Chat Box -->
-        <div  v-if="showChat" class="fixed bottom-30 right-6 bg-green-200 w-74 h-100 p-4 shadow-lg rounded">
+        <div  v-if="showChat" class="fixed bottom-30 right-6 bg-green-200 w-74  p-4 shadow-lg rounded">
             <div class="iconPlace flex items-center gap-2 h-10 mb-1">
                 <div class="bg-white rounded-2xl ml-1 z-50 shadow-orange-700">
                     <UIcon class="pt-3 mt-1 text-2xl " name="material-symbols:robot-2-sharp"></UIcon>
@@ -55,3 +55,7 @@ function alertConstruction(){
 
 
 </script>
+
+19
+13
+
