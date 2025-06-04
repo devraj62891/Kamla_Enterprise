@@ -39,7 +39,7 @@ export { localeContextInjectionKey, useLocale } from '../node_modules/@nuxt/ui/d
 export { useOverlay } from '../node_modules/@nuxt/ui/dist/runtime/composables/useOverlay';
 export { portalTargetInjectionKey, usePortal } from '../node_modules/@nuxt/ui/dist/runtime/composables/usePortal';
 export { useToast } from '../node_modules/@nuxt/ui/dist/runtime/composables/useToast';
-export { useColorMode } from '../node_modules/@nuxtjs/color-mode/dist/runtime/composables';
 export { autocompleteUtil as tw } from '../node_modules/@nuxtjs/tailwindcss/dist/runtime/utils';
+export { useColorMode } from '../node_modules/@nuxtjs/color-mode/dist/runtime/composables';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

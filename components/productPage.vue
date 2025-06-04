@@ -34,7 +34,7 @@
 
           </div> -->
            <div>
-    <form ref="form" @submit.prevent="sendEmail" class="border rounded p-2 bg-white flex flex-col items-center">
+    <form ref="form" @submit.prevent="sendEmail" class="border rounded p-2 bg-pink-50 flex flex-col items-center">
       <h1 class="font-bold">Feedback</h1>
       <UTextarea
         v-model="message"
