@@ -1,9 +1,10 @@
 <template>
   <div>
-    <div
+    <div 
       class="contactInfo bg-blue-950 text-white p-4 items-center flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0"
     >
       <h1 class="font-bold text-xl">KAMALA ENTERPRISE</h1>
+      
 
       <p class="font-bold">GSTIN: 19FSTPS8086Q1ZY</p>
 

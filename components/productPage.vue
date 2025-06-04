@@ -24,15 +24,7 @@
         <h1 class="font-bold mt-10">GODOWN</h1>
         <p>Gr. Floor RAJEN SETH LANE,BELUR BALLY, HOWRAH- 711202</p>
         <div class="tellUs mt-10 ml-10 items-center justify-center align-middle flex">
-          <!-- <div>
-            <h1 class="font-bold">Feedback</h1>
-            
-            <UTextarea v-model="value" placeholder="type..." />
-            <UButton 
-              class="ml-1  bg-blue-200 hover:bg-blue-300 hover:scale-95 transition-transform hover:cursor-pointer"
-              label="Send Feedback" color="primary" variant="outline" @click="buttonClicked" />
-
-          </div> -->
+      
            <div>
     <form ref="form" @submit.prevent="sendEmail" class="border rounded p-2 bg-pink-50 flex flex-col items-center">
       <h1 class="font-bold">Feedback</h1>
@@ -64,55 +56,7 @@
   </div>
 </template>
 
-<!-- <script setup lang="ts">
-// const value = ref('');
 
-
-
-
-
-
-// function buttonClicked() {
-  
-
-//   if (value.value.trim() == "") {
-
-//     alert("please provide feedback")
-//   } else {
-//     value.value = '';
-//     alert("Thanks for the feedback")
-//   }
-
-//   (function(){
-//       emailjs.init({
-//         publicKey: "YOUR_PUBLIC_KEY",
-//       });
-//    })();
-
-
-
-
-// }
-
-import emailjs from '@emailjs/browser';
-
-
-    function sendEmail() {
-      emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this.$refs.form, {
-          publicKey: 'YOUR_PUBLIC_KEY',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-    }
-  
-</script> -->
 
 
 <script setup>

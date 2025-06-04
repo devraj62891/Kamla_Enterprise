@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode"
-  ]
+  ],
+  
   
 });
