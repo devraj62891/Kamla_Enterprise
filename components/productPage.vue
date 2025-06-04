@@ -24,14 +24,31 @@
         <h1 class="font-bold mt-10">GODOWN</h1>
         <p>Gr. Floor RAJEN SETH LANE,BELUR BALLY, HOWRAH- 711202</p>
         <div class="tellUs mt-10 ml-10 items-center justify-center align-middle flex">
-          <div>
+          <!-- <div>
             <h1 class="font-bold">Feedback</h1>
+            
             <UTextarea v-model="value" placeholder="type..." />
-            <UButton
+            <UButton 
               class="ml-1  bg-blue-200 hover:bg-blue-300 hover:scale-95 transition-transform hover:cursor-pointer"
               label="Send Feedback" color="primary" variant="outline" @click="buttonClicked" />
 
-          </div>
+          </div> -->
+           <div>
+    <form ref="form" @submit.prevent="sendEmail" class="border rounded p-2 bg-white flex flex-col items-center">
+      <h1 class="font-bold">Feedback</h1>
+      <UTextarea
+        v-model="message"
+        name="message"
+        placeholder="your identity will be hidden"
+        class="mb-4"
+        required
+      />
+      <input type="submit" value="Send" class="ml-3.5  bg-pink-400 hover:scale-95 hover:bg-pink-500 transition-transform text-white px-4 py-2 rounded cursor-pointer" />
+      <div v-if="status" :class="{ 'text-green-600': success, 'text-red-600': !success }" class="mt-2">
+        {{ status }}
+      </div>
+    </form>
+  </div>
         </div>
       </div>
       <div class="mapSection items-center">
@@ -47,28 +64,87 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const value = ref('');
+<!-- <script setup lang="ts">
+// const value = ref('');
 
 
 
 
 
 
-function buttonClicked() {
+// function buttonClicked() {
   
 
-  if (value.value.trim() == "") {
+//   if (value.value.trim() == "") {
 
-    alert("please provide feedback")
-  } else {
-    value.value = '';
-    alert("Thanks for the feedback")
+//     alert("please provide feedback")
+//   } else {
+//     value.value = '';
+//     alert("Thanks for the feedback")
+//   }
+
+//   (function(){
+//       emailjs.init({
+//         publicKey: "YOUR_PUBLIC_KEY",
+//       });
+//    })();
+
+
+
+
+// }
+
+import emailjs from '@emailjs/browser';
+
+
+    function sendEmail() {
+      emailjs
+        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this.$refs.form, {
+          publicKey: 'YOUR_PUBLIC_KEY',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    }
+  
+</script> -->
+
+
+<script setup>
+import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
+
+const form = ref(null)
+const message = ref('')
+const status = ref('')
+const success = ref(false)
+
+const sendEmail = () => {
+  if (!message.value.trim()) {
+    status.value = 'Please enter a message.'
+    success.value = false
+    return
   }
 
-
-
-
-
+  emailjs
+    .sendForm('service_94qpepm', 'template_1l75oh9', form.value, {
+      publicKey: 'XI0gpTVSC9OA8a3Yc',
+    })
+    .then(() => {
+      status.value = 'Message sent successfully!'
+      success.value = true
+      message.value = ''
+    })
+    .catch((error) => {
+      status.value = 'Failed to send message.'
+      success.value = false
+      console.error('EmailJS Error:', error)
+    })
 }
 </script>
+
