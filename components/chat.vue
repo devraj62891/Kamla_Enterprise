@@ -10,7 +10,7 @@
                 <span class="font-bold">KamlaBot</span>
             </div>
 
-            <div class="chatContainer bg-white h-[50vh] p-1 rounded overflow-y-auto">
+            <div class="chatContainer bg-white h-[40vh] md:h-[50vh] p-1 rounded overflow-y-auto ">
                 <div class="bg-blue-200 p-2 mt-2 rounded text-sm text-green-800">
                     👉 Choose one of the options below:
                 </div>
