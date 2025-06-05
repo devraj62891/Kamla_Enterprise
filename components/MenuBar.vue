@@ -23,8 +23,8 @@
       <ul class="hover:underline hover:text-gray-700 p-2 rounded-md">
         <NuxtLink to="/contactPage">Contact</NuxtLink>
       </ul>
-      <ul @click="adminClick" class="hover:underline hover:text-gray-700 p-2 rounded-md text-red-500">
-        <NuxtLink  to="/">Admin</NuxtLink>
+      <ul  class="hover:underline hover:text-gray-700 p-2 rounded-md text-red-500">
+        <NuxtLink  to="/loginPage">Admin</NuxtLink>
       </ul>
       
     </div>
@@ -36,7 +36,4 @@
 <script setup>
 import { UButton } from '#components';
 
-function adminClick() {
-  alert("Access Denied")
-}
 </script>
