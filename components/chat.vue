@@ -56,6 +56,4 @@ function alertConstruction(){
 
 </script>
 
-19
-13
 

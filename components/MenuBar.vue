@@ -23,9 +23,10 @@
       <ul class="hover:underline hover:text-gray-700 p-2 rounded-md">
         <NuxtLink to="/contactPage">Contact</NuxtLink>
       </ul>
-      <ul class="hover:underline hover:text-gray-700 p-2 rounded-md">
-        <UButton @click="adminClick" class="text-red-600 underline hover:cursor-pointer text-sm">admin</UButton>
+      <ul @click="adminClick" class="hover:underline hover:text-gray-700 p-2 rounded-md text-red-500">
+        <NuxtLink  to="/">Admin</NuxtLink>
       </ul>
+      
     </div>
 
   </div>
